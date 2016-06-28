@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src='d3.js' charset='utf-8'></script>
+    <script>
+    console.log('running test');
+    d3.csv(
+      '../data.csv',
+      function (error, data) {
+        console.log('data callback');
+        if (error) throw error;
+        console.log(data);
+        console.log('Looks like it\'s worked!');
+      }
+    );    
+    </script>
+  </head>
+  <body>
+    Content is in the console.
+  </body>
+</html>
